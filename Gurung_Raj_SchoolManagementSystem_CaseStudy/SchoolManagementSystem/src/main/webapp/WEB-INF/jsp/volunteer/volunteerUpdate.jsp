@@ -73,11 +73,11 @@
 
 				<li class="nav-item"><a class="nav-link" href="/student">Student</a></li>
 				<li class="nav-item"><a class="nav-link" href="/volunteer">Volunteer</a></li>
-				<li class="nav-item"><a class="nav-link" href="/course">Course</a></li>
+				<li class="nav-item"><a class="nav-link" href="/course">Add Course</a></li>
 				<li class="nav-item"><a class="nav-link" href="/courseDisplay">All Courses</a></li>
 				<li class="nav-item"><a class="nav-link" href="/courseEdit">Edit course</a></li>
 				<li class="nav-item"><a class="nav-link" href="/class">Add class</a></li>
-				<li class="nav-item"><a class="nav-link" href="/classDisplay">all class</a></li>
+				<li class="nav-item"><a class="nav-link" href="/classDisplay">All Classes</a></li>
 				<li class="nav-item"><a class="nav-link" href="/logout">Logout</a>
 			</ul>
 		</div>
@@ -171,7 +171,6 @@
 
 		</div>
 
-		<br> <br>
 	</form>
 
 </div>

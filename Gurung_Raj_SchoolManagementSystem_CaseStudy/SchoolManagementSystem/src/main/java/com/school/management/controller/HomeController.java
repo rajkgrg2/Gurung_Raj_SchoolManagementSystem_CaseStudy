@@ -12,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class HomeController {
 	
 	
-
+// RequestMapping annotations in method level
 	@RequestMapping(value = { "/", "/home", "/home.html" })
 	public ModelAndView home() {
 		ModelAndView response = new ModelAndView();

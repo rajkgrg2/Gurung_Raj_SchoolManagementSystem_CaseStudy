@@ -20,7 +20,7 @@ public class UserController {
 	
 	
 
-	@RequestMapping(value = "/login/userPortal")
+	@RequestMapping(value = "/login/userPortal")  //Method level RM
 	public ModelAndView userPortal() {
 		ModelAndView response = new ModelAndView();
 		response.setViewName("login/userPortal");

@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-@Controller
+@Controller  //class level
 public class CourseController {
 
 	@Autowired
@@ -30,16 +30,16 @@ public class CourseController {
 	@Autowired
 	private CourseDAO courseDAO;
 
-	@RequestMapping(value = "/course", method = RequestMethod.GET)
-    public ModelAndView createRecipePage() {
+	@RequestMapping(value = "/course", method = RequestMethod.GET)   //method level
+    public ModelAndView createcoursePage() {
         ModelAndView result = new ModelAndView("course/courserUpdate");
         result.addObject("form", new CreateCourseForm());
 
         return result;
     }
 
-	@RequestMapping(value = "/course", method = RequestMethod.POST)
-	public ModelAndView createRecipeSumit( @Valid CreateCourseForm form, BindingResult bindingResult) throws Exception {
+	@RequestMapping(value = "/course", method = RequestMethod.POST)  //method level
+	public ModelAndView createclass( @Valid CreateCourseForm form, BindingResult bindingResult) throws Exception {
 		ModelAndView result = new ModelAndView("course/courserUpdate");
 
 		// form validation
@@ -76,17 +76,17 @@ public class CourseController {
 		return result;
 	}
 
-	@RequestMapping(value = "/courseEdit", method = RequestMethod.GET)
+	@RequestMapping(value = "/courseEdit", method = RequestMethod.GET)  //method level
 	public ModelAndView courseEditPage() {
 		ModelAndView result = new ModelAndView("course/courserEdit");
 		result.addObject("form", new EditCourseForm());
-	//	result.addObject("difficulty", Difficulty.values());
+	
 		return result;
 	}
 
 
-	@RequestMapping(value = "/courseEdit", method = RequestMethod.POST)
-	public ModelAndView courseEditSumit(@Valid EditCourseForm form, BindingResult bindingResult) throws Exception {
+	@RequestMapping(value = "/courseEdit", method = RequestMethod.POST)  // method level
+	public ModelAndView courseEditpage(@Valid EditCourseForm form, BindingResult bindingResult) throws Exception {
 		ModelAndView result = new ModelAndView("course/courserEdit");
 
 		// form validation

@@ -29,8 +29,8 @@ public class StudentController {
     @Autowired
     private StudentDAO studentDAO;
 
-    @RequestMapping(value = "/student", method = RequestMethod.GET)
-    public ModelAndView createRecipePage() {
+    @RequestMapping(value = "/student", method = RequestMethod.GET)  //method level RM
+    public ModelAndView createStudentPage() {
         ModelAndView result = new ModelAndView("student/studentUpdate");
         result.addObject("form", new CreateStudentForm());
       
@@ -45,7 +45,7 @@ public class StudentController {
 
 
     @RequestMapping(value = "/student", method = RequestMethod.POST)
-    public ModelAndView createRecipeSumit(@Valid CreateStudentForm form, BindingResult bindingResult) throws Exception {
+    public ModelAndView createStudent(@Valid CreateStudentForm form, BindingResult bindingResult) throws Exception {
         ModelAndView result = new ModelAndView("student/studentUpdate");
 
         // form validation

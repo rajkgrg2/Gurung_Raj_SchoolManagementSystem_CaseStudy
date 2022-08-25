@@ -30,7 +30,7 @@ public class VolunteerController {
     private VolunteerDAO volunteerDAO;
 
     @RequestMapping(value = "/volunteer", method = RequestMethod.GET)
-    public ModelAndView createRecipePage() {
+    public ModelAndView createVolunteerPage() {
         ModelAndView result = new ModelAndView("volunteer/volunteerUpdate");
         result.addObject("form", new CreateVolunteerForm());
         User user = userDao.findByEmail(getUserEmail());
@@ -42,7 +42,7 @@ public class VolunteerController {
 
 
     @RequestMapping(value = "/volunteer", method = RequestMethod.POST)
-    public ModelAndView createRecipeSumit(@Valid CreateVolunteerForm form, BindingResult bindingResult) throws Exception {
+    public ModelAndView createVolunteer(@Valid CreateVolunteerForm form, BindingResult bindingResult) throws Exception {
         ModelAndView result = new ModelAndView("volunteer/volunteerUpdate");
 
         // form validation

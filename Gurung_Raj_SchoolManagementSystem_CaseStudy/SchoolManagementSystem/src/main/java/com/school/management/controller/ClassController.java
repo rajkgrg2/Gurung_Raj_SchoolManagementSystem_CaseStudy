@@ -23,7 +23,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-@Controller
+@Controller  
 public class ClassController {
 
     @Autowired
@@ -31,7 +31,7 @@ public class ClassController {
 
     @Autowired
     private ClassDAO classDAO;
-
+//localhost:8080/class
     @RequestMapping(value = "/class", method = RequestMethod.GET)
     public ModelAndView createClassPage() {
         ModelAndView result = new ModelAndView("class/classUpdate");
@@ -75,7 +75,7 @@ public class ClassController {
         return response;
     }
     @RequestMapping(value = "/class", method = RequestMethod.POST)
-    public ModelAndView createRecipeSumit(@Valid CreateClassForm form, BindingResult bindingResult) throws Exception {
+    public ModelAndView createsms(@Valid CreateClassForm form, BindingResult bindingResult) throws Exception {
         ModelAndView result = new ModelAndView("class/classUpdate");
 
         // form validation

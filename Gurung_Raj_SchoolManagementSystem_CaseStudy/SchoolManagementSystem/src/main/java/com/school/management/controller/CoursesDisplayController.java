@@ -20,10 +20,10 @@ public class CoursesDisplayController {
 	
 	@Autowired
 	private CourseDAO courseDAO;
-
+  //localhost:8080/courseDisplay (mapping handler to url)
 	@RequestMapping(value = "/courseDisplay", method = RequestMethod.GET)
 	public ModelAndView search1() {
-		ModelAndView response = new ModelAndView();
+		ModelAndView response = new ModelAndView(); // Creating model and view object
 		response.setViewName("course/courseDisplay");
 		List<Course> courses = new ArrayList<Course>();
 
@@ -31,7 +31,7 @@ public class CoursesDisplayController {
 		courses.forEach(
 				(n)->System.out.println(n.toString())
 		);
-		response.addObject("courses", courses);
+		response.addObject("courses", courses);// setting the data
 		response.addObject("search", "yes");
 		return response;
 	}

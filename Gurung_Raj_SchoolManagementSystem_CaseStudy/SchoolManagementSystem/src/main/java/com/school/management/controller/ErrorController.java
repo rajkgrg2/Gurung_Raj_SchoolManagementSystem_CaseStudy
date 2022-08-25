@@ -14,7 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class ErrorController {
 
 	@RequestMapping(value = "/error/404")
-	public String error404(HttpServletRequest request) {
+	public String error404(HttpServletRequest request) {   //method level
 
 		String origialUri = (String) request.getAttribute("javax.servlet.forward.request_uri");
 		System.out.println("Requested URL not found : " + request.getMethod() + " " + origialUri);

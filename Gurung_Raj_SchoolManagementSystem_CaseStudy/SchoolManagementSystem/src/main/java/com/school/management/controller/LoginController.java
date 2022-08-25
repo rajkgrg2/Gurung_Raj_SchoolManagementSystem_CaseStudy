@@ -40,7 +40,7 @@ public class LoginController {
 		System.out.println("PostConstruct Reference to UserDAO = " + userDao);
 	}
 
-	@RequestMapping(value = "/createUser", method = RequestMethod.GET)
+	@RequestMapping(value = "/createUser", method = RequestMethod.GET)   //method level RequestMapping
 	public ModelAndView createUserPage() {
 		logger.info("Enter: createUserPage()");
 		ModelAndView result = new ModelAndView("login/createUser");
