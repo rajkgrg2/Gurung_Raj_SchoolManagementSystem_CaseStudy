@@ -41,8 +41,6 @@
 ![Screenshot (77)](https://user-images.githubusercontent.com/7123198/189037751-058818cf-5af7-4b31-adaa-2d1e2e47504a.png)
 ![Screenshot (78)](https://user-images.githubusercontent.com/7123198/189037757-761a9ed1-27a8-4db2-880b-8faa72b68776.png)
 
-## ER Diagram
-![SchemaDiagram](https://user-images.githubusercontent.com/7123198/189035915-00428b24-1f5a-4d3c-8c34-213af411d9aa.png)
 
 ## Authors
 
