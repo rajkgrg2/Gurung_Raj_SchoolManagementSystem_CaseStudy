@@ -42,6 +42,9 @@
 ![Screenshot (78)](https://user-images.githubusercontent.com/7123198/189037757-761a9ed1-27a8-4db2-880b-8faa72b68776.png)
 
 
+![MySQL](https://user-images.githubusercontent.com/7123198/230845114-0e7be678-92be-4fbf-ab91-b000b11eec50.png)
+
+
 ## Authors
 
 - [@rajkgrg2](https://github.com/rajkgrg2)
